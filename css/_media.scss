@@ -1,0 +1,116 @@
+@media (min-width: 1024px) and (max-width: 1366px) {
+    %fixed-width {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    %fixed-width {
+        max-width: 744px;
+        margin: 0 auto;
+    }
+
+    .navbar{
+        .navbar-ul{
+            .navbar-li{
+                .navbar-a{
+                    padding: 6px;
+                }
+            }
+        }
+    }
+
+    .container{
+        .banner-header{
+            flex-direction: column-reverse;
+        }
+        .container-content{
+            width:100%;
+        }
+        .container-circle{
+            margin-left: 0;
+            margin:0 auto;
+        }
+    }
+
+    .bottom{
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    %fixed-width {
+        max-width: 310px;
+        margin: 0 auto;
+    }
+
+    .top-bar{
+        flex-direction: column;
+        text-align: center;
+    }
+    .navbar{
+        .navbar-ul{
+            padding: 3px;
+            .navbar-li{
+                .navbar-a{
+                    padding: 6px;
+                    font-size: 7px;
+                }
+            }
+        }
+    }
+
+    .top,.bottom{
+        justify-content: space-evenly;
+    }
+
+    .bottom{
+        .item{
+            margin-bottom: 40px;
+        }
+    }
+
+    .container{
+        .icon{
+            margin:0;
+        }
+        .banner-header{
+            flex-direction: column-reverse;
+        }
+        .container-content{
+            padding:0;
+            width:100%;
+            .container-heading{
+                font-size: 30px;
+            }
+        }
+        .container-circle{
+            margin-left: 0;
+            height:277px;
+            width:277px;
+            margin:0 auto;
+        }
+    }
+
+    .info{
+        .info-container{
+            flex-direction: column;
+            padding: 10px 0;
+        }
+        
+    }
+
+    .blog,.tweet,.contact,.link{
+        width:100%;
+        padding:0;
+        margin-bottom:25px;
+    }
+
+    .footer-section{
+        .footer-container{
+            text-align: center;
+            flex-direction: column;
+        }
+    }
+}
